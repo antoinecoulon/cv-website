@@ -3,55 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antoine COULON - Développeur web</title>
+    <title>Antoine COULON - Développeur Web</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+<div id="bloc-page">    
     <header>
-<h1 id="gros-titre">Antoine COULON</h1>
-<p class="description">
-    Je recherche un contrat d'apprentissage en tant que Développeur web, vais-je le trouver grâce à vous ?
-</p>
-<nav class="menu">
-    <ul>
-        <li class="presentation"><a href="#presentation">Présentation</a></li>
-        <li class="competences"><a href="#competences">Compétences</a></li>
-        <li class="pro"><a href="#pro">Expériences</a></li>
-        <li class="formation"><a href="#formation">Formation</a></li>
-        <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
-    </ul>
-</nav>
-<!-- "Expériences" ou "Expériences pro"
-     ou "Expériences professionnelles" ? 
-/ utiliser flexbox sur le css -->
-
+        <div class="header">
+            <h1 id="gros-titre">Antoine COULON</h1>
+        
+        <p class="description">
+            Je recherche un contrat d'apprentissage en tant que Développeur web, vais-je le trouver grâce à vous ?
+        </p>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li class="presentation"><a href="#presentation">Présentation</a></li>
+                <li class="competences"><a href="#competences">Compétences</a></li>
+                <li class="pro"><a href="#pro">Expériences</a></li>
+                <li class="formation"><a href="#formation">Formation</a></li>
+                <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+        <!-- "Expériences" ou "Expériences pro"
+            ou "Expériences professionnelles" ? 
+        / utiliser flexbox sur le css -->
+        
     </header>
 
-    <section id="presentation">
-<!-- mettre une ancre vers les coordonnées -->
-    </section>
+    <main>
+        <div class="divider"></div>
+        <section id="presentation">
+            <div id="sec1-presentation">
+                <p>
+                    Bonjour ! Et bienvenue sur mon tout premier site internet !
+                    Je m'appelle Antoine, j'ai bientôt 29 ans, et j'ai la chance d'être le papa d'une merveilleuse petite fille ! <br />
+                    Actuellement en reconversion professionnelle, je prépare un Titre professionnel Développeur Web et web mobile. Je suis activement <strong>à la recherche d'une entreprise prête à m'accueillir en contrat d'apprentissage</strong>. <br />
+                    Ce sera l'occasion pour moi de vous montrer toute ma détermination à réussir ma reconversion, ma débordante envie d'apprendre toujours plus, et a volonté de réaliser un travail soigné. <br />
+                    Ce site me permettra personnellement de voir ce que j'ai appris depuis que j'ai commencé à me former seul sur le Web en Mai 2022, et vous permettra de mieux me connaître et de vous rendre coompte de mes compétences. <br />
+                    N'hésitez pas à me contacter, je vous ai laissé <a href="#contact" id="ancre-bas-de-page">mes coordonnées</a> en bas de page !
+                </p>
+            </div>
+            <div id="sec1-photo">
+                <img src="./images/photo.png" alt="Ma photo">
+            </div>
+            <!-- <div id="sec1-competences">
+                <ul>
+                    <li>HTML <img src="/images/html.png" alt="HTML" class="icones"></li>
+                    <li>CSS <img src="/images/css.png" alt="CSS" class="icones"></li>
+                    <li>JavaScript <img src="/images/javascript.png" alt="Javascript" class="icones"></li>
+                    <li>PHP <img src="/images/php.png" alt="PHP" class="icones"></li>
+                    <li>MySQL <img src="/images/mysql.png" alt="MySQL" class="icones"></li>
+                </ul>
+            </div> -->
+    <!-- mettre une ancre vers les coordonnées 
+    3 div côte à côte: présentation + photo + qques compétences -->
+        </section>
+        <div class="divider" id="divider2"></div>
+        <section id="competences">
+            <div class="sec-2-div">
+                <h2 class="sec2-titres">HARD Skills</h2>
+                <ul class="competences">
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Systèmes et réseaux</li>
+                    <li>Rédaction / Orthographe</li>
+                    <li>Anglais</li>
+                </ul>
+            </div>
+            <div class="sec-2-div">
+                <h2 class="sec2-titres">SOFT Skills</h2>
+                <ul class="competences">
+                    <li>Autonomie</li>
+                    <li>Travail d'équipe</li>
+                    <li>Résolution de problèmes</li>
+                    <li>Créativité</li>
+                    <li>Patience</li>
+                    <li>Pédagogie / Education</li>
+                    <li>Organisation</li>
+                    <li>Sens de la finition</li>
+                    <li>Empathie</li>
+                </ul>
+            </div>
+            <!-- <div class="sec-2-div">
+                <h2 class="sec2-titres">Ce que je vais apprendre en centre de formation:</h2>
+                <ul class="competences">
+                    <li>HTML / CSS</li>
+                    <li>JavaScript / jQuery</li>
+                    <li>Ajax / PHP / MySQL</li>
+                    <li>Saas</li>
+                    <li>Bootstrap</li>
+                    <li>Wordpress / Joomla / Prestashop</li>
+                    <li>Photoshop / Illustrator</li>
+                    <li>Gestion de projet</li>
+                    <li>Méthode Scrum Agile</li>
+                </ul>
+            </div>
+            <div class="sec-2-div">
+                <h2 class="sec2-titres">Ce que j'aimerais apprendre par la suite...:</h2>
+                <ul class="competences">
+                    <li>React JS</li>
+                    <li>Ruby</li>
+                    <li>C / C++</li>
+                    <li>Adobe XD / InDesign</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>UX / UI Design</li>
+                </ul>
+            </div>     -->
+            
+    <!-- voir plaquette arinfo / type compétence souligné puis logo 
+    compétences associées 
+        MES SKILLS (savoir faire et savoir être) / CE QUE JE VAIS APPRENDRE EN FORMATION / CE QUE JAIMERAIS APPRENDRE ENSUITE -->
+        </section>
 
-    <section id="competences">
-<!-- voir plaquette arinfo / type compétence souligné puis logo 
-compétences associées -->
-    </section>
+        <section id="pro">
+    <!-- une partie Informatique et une partie Autres expériences -->
+        </section>
 
-    <section id="pro">
-<!-- une partie Informatique et une partie Autres expériences -->
-    </section>
+        <section id="formation">
+    <!-- trouver une belle façon de présenter 
+    (4 formations: bac bts vae arinfo+détaillé) -->
+        </section>
 
-    <section id="formation">
-<!-- trouver une belle façon de présenter 
-(4 formations: bac bts vae arinfo+détaillé) -->
-    </section>
-
-    <section id="portfolio">
-<!-- présentation en grid ? avec image miniature et lien extérieur
-mettre github et artstation -->
-    </section>
+        <section id="portfolio">
+    <!-- présentation en grid ? avec image miniature et lien extérieur
+    mettre github et artstation -->
+        </section>
+    </main>
 
     <footer id="footer">
+        <div class="mes-coordonnees foot">
+            <ul>
+                <li>Les Landes Genusson (Nord-Vendée)</li>
+                <li>a.antoinecoulon@gmail.com</li>
+                <li>06 36 37 93 16</li>
+            </ul>
+        </div>
+        <div class="linkedin foot">
+            <p>Connectez-vous à moi !</p>
+            <a href="https://www.linkedin.com/in/antoine-coulon-65638882/"><img src="/images/linkedin.png" alt="LinkedIn"></a>
+        </div>
 <!-- mettre ici mes coordonnées / mettre lien linkedin -->
     </footer>
+</div>
 </body>
 </html>
