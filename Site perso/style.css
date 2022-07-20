@@ -12,6 +12,11 @@ body {
     width: 100%;
     margin: auto;
 }
+@media all and (max-device-width: 480px) {
+    #bloc-page {
+        width: auto;
+    }
+}
 
 h1, h2 {
     font-family: 'Gulzar', 'Trebuchet MS', sans-serif;
@@ -112,7 +117,7 @@ nav a:visited {
     
 }
 
-#competences {
+.competences1 {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -125,6 +130,12 @@ nav a:visited {
     padding: 30px;
     border: 5px solid #2A9D8F;
     box-shadow: 20px 20px #E9C46A33;
+}
+@media all and (max-device-width: 480px) {
+    .sec-2-div {
+        width: auto;
+        margin: 50px 10px;
+    }
 }
 .sec-2-div h2 {
     font-size: 18px;
@@ -140,6 +151,29 @@ nav a:visited {
 }
 .sec-2-div li {
     margin: 5px 0;
+}
+
+/* Exp pro */
+#pro {
+    margin: 50px 0;
+}
+
+.exp {
+    width: 50%;
+    margin: 25px auto;
+    text-align: justify;
+    border: 1px dotted #F4A261;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+#projet {
+    width: 75%;
+    margin: auto;
+    text-align: justify;
+    border: 2px double #2A9D8F;
+    padding: 20px;
+    font-size: 20px;
 }
 
 /* Footer */
